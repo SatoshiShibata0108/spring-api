@@ -1,4 +1,4 @@
-package com.example.springdemo.api;
+package com.example.springdemo.controller;
 
 import com.example.springdemo.domain.Item;
 import com.example.springdemo.service.ItemService;
