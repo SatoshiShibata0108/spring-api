@@ -32,6 +32,7 @@ public class ItemRestController {
      * @param item
      * @return item
      */
+    @CrossOrigin
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     Item postItem(@RequestBody Item item) {
@@ -42,6 +43,7 @@ public class ItemRestController {
      * 商品削除API
      * @param id
      */
+    @CrossOrigin
     @DeleteMapping(path = "{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     void deleteItem(@PathVariable Integer id) {
@@ -54,6 +56,7 @@ public class ItemRestController {
      * @param item
      * @return item
      */
+    @CrossOrigin
     @PutMapping(path = "{id}")
     Item putItem(@PathVariable Integer id, @RequestBody Item item) {
         item.setId(id);
